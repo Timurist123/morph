@@ -1,13 +1,12 @@
 local Morphling = {}
 
-Morphling.optionEnable = Menu.AddOptionBool({"Hero Specific", "Morphling"}, "Enable", false)
-Morphling.optionIcon = Menu.AddOptionIcon({ "Hero Specific", "Morphling" }, "panorama/images/heroes/icons/npc_dota_hero_morphling_png.vtex_c")
-Morphling.maxWaveRange =  Menu.AddOptionBool({"Hero Specific", "Morphling"}, "Max Waveform Range", false)
-Morphling.AutoKill = Menu.AddOptionBool({"Hero Specific", "Morphling", "EBlade Auto Kill"}, "Enable", false)
+Morphling.optionEnable = Menu.AddOption({"Hero Specific", "Morphling"}, "Enable", false)
+Morphling.maxWaveRange =  Menu.AddOption({"Hero Specific", "Morphling"}, "Max Waveform Range", false)
+Morphling.AutoKill = Menu.AddOption({"Hero Specific", "Morphling", "EBlade Auto Kill"}, "Enable", false)
 Morphling.AutoKillKey = Menu.AddKeyOption({"Hero Specific",  "Morphling", "EBlade Auto Kill"}, "Toggle Key", Enum.ButtonCode.KEY_0)
-Morphling.QOP = Menu.AddOptionBool({"Hero Specific",  "Morphling", "EBlade Auto Kill"}, "QOP has Level 25: 15s Spell Block?", false)
-Morphling.Display = Menu.AddOptionBool({"Hero Specific", "Morphling"}, "Damage Info", false)
-Morphling.AutoShift = Menu.AddOptionBool({"Hero Specific", "Morphling","Auto Shift"}, "Enable", false)
+Morphling.QOP = Menu.AddOption({"Hero Specific",  "Morphling", "EBlade Auto Kill"}, "QOP has Level 25: 15s Spell Block?", false)
+Morphling.Display = Menu.AddOption({"Hero Specific", "Morphling"}, "Damage Info", false)
+Morphling.AutoShift = Menu.AddOption({"Hero Specific", "Morphling","Auto Shift"}, "Enable", false)
 Morphling.optionHeroMorphHPBalanceDeviation = Menu.AddOptionSlider({"Hero Specific", "Morphling", "Auto Shift" }, "HP Deviation", 50, 250, 50)
 
 Morphling.AutoShiftKey = Menu.AddKeyOption({"Hero Specific",  "Morphling", "Auto Shift"}, "Toggle Key", Enum.ButtonCode.KEY_8)
